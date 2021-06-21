@@ -4,42 +4,62 @@
     border-radius: 10px;
 }
 
+
+::-webkit-scrollbar{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px!important;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    width: 10px!important;
+}
+
 body{
-    background-color:rgb(31, 31, 31);
     color: aquamarine;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
 }
 
 .flex{
-    margin: 10px;
     padding: 10px;
-    display: inline-flex;
-    justify-content:flex-start;
     background-color: rgba(167, 167, 167, 0.219);
-    border-radius: 10px;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
+
 
 .flex-two{
     padding: 10px;
     padding-top: 20px!important;
-    background-color: #4c4c4c;
-    border-radius: 10px;
+    background-color: #4c4c4c81;
     box-shadow: 0px 1px 6px 0px rgb(29 29 29) inset, 2px 2px 2px rgb(29 29 29) inset;
-    min-height: 200px;
-    min-width:50vw ;
 }
 
 
 .profile{
-    max-height: 300px;
-    max-width: 300px;
     padding: 10px;
     text-align: center;
 }
 
 .profile > .profile-image{
     border-radius: 50%;
-    height: 90%!important;
-    width: 90%!important;
+    height: 30vh!important;
+    width: 30vh!important;
+}
+
+.contact{
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media all and (max-Width:750px) {
@@ -47,20 +67,9 @@ body{
         justify-content: center!important;
     };
 
-    .flex{
-        display: block!important;
-        flex-wrap: wrap;
-        justify-content: center!important;
-    }
-
-    .flex-one,.flex-two{
-        display: block;
-    }
 
     .profile{
         margin: auto;
-        height: 250px;
-        width: 250px;
         text-align: center;
     }
 }
