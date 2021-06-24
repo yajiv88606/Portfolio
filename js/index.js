@@ -6,7 +6,7 @@ var themeSelector = document.getElementById('theme')
 document.getElementById("theme").addEventListener('click',(event)=>{
     document.getElementById('span').innerHTML=''
     if(dark){
-       // variables.style.setProperty('--primary','white')
+        variables.style.setProperty('--primary','teal')
         variables.style.setProperty('--radiant-color','radial-gradient(#585858, #3f3f3f,black)')
         variables.style.setProperty('--shadow','1px 2px 1px 0px rgb(255 255 255);')
         themeSelector.innerHTML = '<i class="far fa-lightbulb"></i>'

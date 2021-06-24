@@ -13,6 +13,7 @@
 }
 
 ::-webkit-scrollbar {
+  display: hidden!important;
   background-color: black;
   width: 10px !important;
 }
@@ -28,7 +29,9 @@
 }
 
 body {
-  
+  background-image: var(--radiant-color);
+  min-height: 100vh;
+  padding: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -42,6 +45,7 @@ body {
   cursor: pointer;
   color: var(--primary);
   font-size: xx-large;
+ 
 }
 i{
   font-size: larger;
@@ -51,20 +55,16 @@ i{
 }
 
 .flex {
-  position: absolute;
-  top: 0px;
+  margin: 10px;
   padding: 10px;
-  background-image: var(--radiant-color);
-  min-height: 100vh;
-  min-width: 97%;
-  overflow: hidden;
 }
 
 .flex-two {
   padding: 10px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 20px;
-  background: #f5f5f5b9;
+  background: #ffffff;
   box-shadow: var(--shadow);
 }
 
@@ -81,7 +81,7 @@ a{
   border-radius: 50%;
   height: 30vh !important;
   width: 30vh !important;
-  box-shadow: 5px 3px 11px 0px rgb(29 29 29)
+  box-shadow: var(--shadow)
 }
 
 .contact {
