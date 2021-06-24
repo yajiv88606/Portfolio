@@ -7,13 +7,15 @@
 
 :root {
   --primary: #ef00ab;
-  --white: #ffffff; 
-  --radiant-color:radial-gradient(white, #e7e7e7, #838383);
-  --shadow:5px 3px 11px 0px rgb(29 29 29);
+  --secondary: black;
+  --white: #ffffff;
+  --radiant-color: radial-gradient(#b6b6b6, #a7a7a7, #383838);
+  --shadow: 5px 3px 11px 0px rgb(29 29 29);
+  --card-background: white;
 }
 
 ::-webkit-scrollbar {
-  display: hidden!important;
+  display: hidden !important;
   background-color: black;
   width: 10px !important;
 }
@@ -36,18 +38,16 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-.btn{
-  background: none!important;
-  outline: none!important;
-  background-color: none!important;
-  border: none!important;
+.btn {
+  background: none !important;
+  outline: none !important;
+  background-color: none !important;
+  border: none !important;
   cursor: pointer;
   color: var(--primary);
   font-size: xx-large;
- 
 }
-i{
+i {
   font-size: larger;
 }
 .header {
@@ -64,12 +64,12 @@ i{
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 20px;
-  background: #ffffff;
+  background: var(--card-background);
   box-shadow: var(--shadow);
 }
 
-a{
-  color:var(--primary);
+a {
+  color: var(--primary);
 }
 
 .profile {
@@ -81,7 +81,7 @@ a{
   border-radius: 50%;
   height: 30vh !important;
   width: 30vh !important;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
 }
 
 .contact {
@@ -93,6 +93,7 @@ a{
 }
 
 .languages {
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -108,7 +109,7 @@ a{
   /* background-color: rgba(255, 255, 255, .15); */
   border-radius: 15px;
   background: #ffffff;
-  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  box-shadow: var(--shadow);
   font-weight: bolder !important;
   text-align: center;
   align-items: bottom;
@@ -129,7 +130,8 @@ a{
 }
 
 .about {
-    min-height: 10vh;
+  color: var(--secondary);
+  min-height: 10vh;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -141,73 +143,72 @@ a{
 }
 
 .java-script {
-    background-image: url("./assets/java_script.jpg");
-    background-size: cover;
-    backdrop-filter: blur(10px);
+  background-image: url("./assets/java_script.jpg");
+  background-size: cover;
+  backdrop-filter: blur(10px);
 }
 
 .html {
-    background-image: url("./assets/html.jpg");
-    background-size: contain;
-    backdrop-filter: blur(10px);
-    
+  background-image: url("./assets/html.jpg");
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 
-
 .python {
-    background-image: url("./assets/python.jpg");
-    background-size: contain;
-    backdrop-filter: blur(10px);
-    
+  background-image: url("./assets/python.jpg");
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 
 .database {
-    /* background-image: url("./assets/database.jpg"); */
-    background-image: var(--radiant-color);
-    background-size: contain;
-    backdrop-filter: blur(10px);
-    
+  /* background-image: url("./assets/database.jpg"); */
+  background-image: var(--radiant-color);
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 .mysql {
-    background-image:  var(--radiant-color);
-    background-size: contain;
-    backdrop-filter: blur(10px);
-    
+  background-image: var(--radiant-color);
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 .mongo {
-    /* background-image: url("./assets/mongo.jpg"); */
-    background-image:  var(--radiant-color);
-    background-size: contain;
-    backdrop-filter: blur(10px);
-    
-}
-
-.framework{
+  /* background-image: url("./assets/mongo.jpg"); */
   background-image: var(--radiant-color);
-    /* background-image: url("./assets/frameworl.jpg"); */
-    background-size: contain;
-    backdrop-filter: blur(10px);
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 
-.spring{
-  background-image:  var(--radiant-color);
-    /* background-image: url("./assets/spring.jpg"); */
-    background-size: contain;
-    backdrop-filter: blur(10px);
+.framework {
+  background-image: var(--radiant-color);
+  /* background-image: url("./assets/frameworl.jpg"); */
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 
-.library{
-   background-image:  var(--radiant-color);
-    background-size: contain;
-    backdrop-filter: blur(10px);
+.spring {
+  background-image: var(--radiant-color);
+  /* background-image: url("./assets/spring.jpg"); */
+  background-size: contain;
+  backdrop-filter: blur(10px);
+}
+
+.library {
+  background-image: var(--radiant-color);
+  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 @media all and (max-width: 750px) {
+ 
+  *{
+    font-size: small;
+  }
   body {
     justify-content: center !important;
   }
 
-  .languages{
-      justify-content: space-around;
+  .languages {
+    padding: 10px;
+    justify-content: space-around;
   }
 
   .language {
