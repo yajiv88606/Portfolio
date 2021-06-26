@@ -6,7 +6,7 @@
   letter-spacing: 0.1em;
 }
 body {
-  scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
 }
 :root {
   --primary-background: #421d61;
@@ -21,6 +21,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #1f0038;
+  border-radius: 10px;
 }
 .navbar,
 .footer {
@@ -57,7 +58,7 @@ body {
 
 .about {
   color: #05ebdb;
-  height: 90vh;
+  min-height: 90vh;
   padding: 0.5em 1em;
   margin: auto;
   background-color: #421d61;

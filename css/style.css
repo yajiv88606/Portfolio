@@ -21,6 +21,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #1f0038;
+  border-radius: 10px;
 }
 
 .navbar,
@@ -77,7 +78,7 @@ body {
 
 .about {
   color: #05ebdb;
-  height: 90vh;
+  min-height: 90vh;
   padding: 0.5em 1em;
   margin: auto;
   background-color: #421d61;
