@@ -66,7 +66,7 @@ body {
   text-align: center;
   .profile {
     justify-content: center;
-    img {
+    .profile_image {
       height: 40vh;
       width: 40vh;
       border-radius: 50%;
@@ -88,14 +88,15 @@ body {
     .social-media {
       color: #ffcc8e;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin: 0.5em;
       font-weight: lighter;
-
-      h5 {
-        cursor: pointer;
-        font-size: smaller;
-        font-weight: lighter;
+      .logo{
+          height: 1.5em;
+          width: 1.5em;
+          background-color: none;
+          box-shadow: none;
+          color: white;
       }
     }
   }
