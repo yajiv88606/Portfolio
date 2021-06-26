@@ -5,117 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <script
-      src="https://kit.fontawesome.com/baacad37a0.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-   
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="flex">
-      <div style="width: 100%; text-align: right !important">
-        <span id="span">Click on the icon to change theme </span><button class ="btn" id="theme"><i class="fas fa-lightbulb"></i></button>
-      </div>
-      <div class="flex-one">
-        <div class="profile">
-          <img class="profile-image" src="./assets/profile_image.jpg" alt="" />
-          <!-- <i class="fas fa-id-badge"></i>  -->
-          <h3 class="header">Vijay M</h3>
-          <div class="contact">
-            <a href="https://www.instagram.com/vijay0203/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/vijay-kumar-m-517677aa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/yajiv88606"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-github"></i
-            ></a>
+    <div class="navbar">
+      <header>Vijay M</header>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+    <div class="about" id="about">
+      <div class="profile">
+        <div>
+          <img src="./assets/profile_image.jpg" alt="" />
+          <h3>Vijay M</h3>
+          <div class="social-media">
+            <h4>LinkedIn</h4>
+            <h4>Instagram</h4>
+            <h4>Mail</h4>
+            <h4>Contact No</h4>
           </div>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            corrupti, consequatur dolor aspernatur non dolore aut ad ut maiores.
+            Perferendis necessitatibus assumenda expedita autem iusto sint
+            officiis officia quia commodi provident fugit, amet, sapiente
+            exercitationem nulla voluptatem dolores inventore id quasi adipisci
+            facilis porro iure! Tempore reiciendis ex vel quas?
+          </p>
         </div>
       </div>
-     
-      <div class="flex-two">
-        <h3 class="header">About</h3>
-        <div class="about" style="padding: 10px;">
-          An introvert who likes to learn new things and code whenever possible.
+    </div>
+    <h2 style="text-align: center; margin: 1em 1em" id="education">
+      Education
+    </h2>
+    <div class="education">
+      <div class="item">
+        <h4>SSLC / X</h4>
+        <p>
+          Passed out with <span class="imp">87.5%(Distinction)</span> from
+          <span class="imp"> Karnataka State Educator Board</span>
+        </p>
+      </div>
+      <div class="item">
+        <h4>XII</h4>
+        <p>
+          Passed out with <span class="imp">66.5%</span> from
+          <span class="imp">
+            Karnataka State Pre University Educator Board</span
+          >
+        </p>
+      </div>
+      <div class="item">
+        <h4>PG</h4>
+        <p>
+          Passed out with <span class="imp">7.5 CGPA</span> from
+          <span class="imp"> Hindustan University</span> in
+          <span class="imp">Aerospace Engineering</span>
+        </p>
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <h2 style="text-align: center; margin: 1em 1em">Skills</h2>
+      <div class="cards">
+        <div class="card">
+          <h4>Languages</h4>
+          <p>Java , Python, Javascript, TypeScript, HTML, CSS</p>
+        </div>
+        <div class="card">
+          <h4>FrameWorks/Libraries</h4>
+          <p>Spring, Angular, ReactJs, Bootsrap</p>
+        </div>
+        <div class="card">
+          <h4>Tools</h4>
+          <p>GitHub, Jenkins, SonarQube</p>
+        </div>
+        <div class="card">
+          <h4>Cloud</h4>
+          <p>AWS, Azure, GCP</p>
         </div>
       </div>
-      <!-- <h3  class="header" style="padding-left: 10px;margin-top: 10px;">Languages <i class="fa fa-solid fa-language"></i></h3> -->
-      <div class="flex-two">
-        <h3 class="header">
-          Programming Languages <i class="fa fa-solid fa-code"></i>
-        </h3>
-        <div class="languages progrmming">
-          <div class="language java">
-            <h4 class="text">Java</h4>
-          </div>
-          <div class="language java-script">
-            <h4 class="text">Javascript</h4>
-          </div>
-          <div class="language java-script">
-            <h4 class="text">Typescript</h4>
-          </div>
-          <div class="language html">
-            <h4 class="text">HTML</h4>
-          </div>
-          <div class="language python">
-            <h4 class="text">Python</h4>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <h3 class="header">
-          Database/Server <i class="fa fa-solid fa-database"></i>
-        </h3>
-        <div class="languages progrmming">
-          <div class="language database">
-            <h4 class="text">SQL</h4>
-          </div>
-          <div class="language mysql">
-            <h4 class="text">MySQL</h4>
-          </div>
-          <div class="language mongo">
-            <h4 class="text">MongoDB</h4>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <h3 class="header">Frameworks/Libraries</h3>
-        <div class="languages progrmming">
-          <div class="language spring">
-            <h4 class="text">Spring</h4>
-          </div>
-          <div class="language framework">
-            <h4 class="text">Angular</h4>
-          </div>
-          <div class="language library">
-            <h4 class="text">ReactJS</h4>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <h3 class="header">Tools</h3>
-        <div class="languages progrmming">
-          <div class="language spring">
-            <h4 class="text">Git</h4>
-          </div>
-          <div class="language framework">
-            <h4 class="text">Jenkins</h4>
-          </div>
-          <div class="language library">
-            <h4 class="text">SonarQube</h4>
-          </div>
-          <div class="language library">
-            <h4 class="text">Docker</h4>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+    <div class="footer">
+        
+    </div>
   </body>
-  <script src="./js/index.js"></script>
 </html>
