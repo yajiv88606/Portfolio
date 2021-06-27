@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -18,7 +19,7 @@
     </div>
     <div class="about" id="about">
       <div class="profile">
-        <div>
+        <div data-aos="fade-up">
           <img class="profile_image" src="./assets/profile_image.jpg" alt="" />
           <h3>Vijay M</h3>
           <div class="social-media">
@@ -34,7 +35,7 @@
           </div>
         </div>
         <div>
-          <p>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             corrupti, consequatur dolor aspernatur non dolore aut ad ut maiores.
             Perferendis necessitatibus assumenda expedita autem iusto sint
@@ -45,18 +46,22 @@
         </div>
       </div>
     </div>
-    <h2 style="text-align: center; margin: 1em 1em" id="education">
+    <h2
+      style="text-align: center; margin: 1em 1em"
+      id="education"
+      data-aos="fade-in"
+    >
       Education
     </h2>
     <div class="education">
-      <div class="item">
+      <div class="item" data-aos="fade-right">
         <h4>SSLC / X</h4>
         <p>
           Passed out with <span class="imp">87.5%(Distinction)</span> from
           <span class="imp"> Karnataka State Educator Board</span>
         </p>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-in">
         <h4>XII</h4>
         <p>
           Passed out with <span class="imp">66.5%</span> from
@@ -65,7 +70,7 @@
           >
         </p>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-left">
         <h4>PG</h4>
         <p>
           Passed out with <span class="imp">7.5 CGPA</span> from
@@ -77,24 +82,46 @@
     <div class="skills" id="skills">
       <h2 style="text-align: center; margin: 1em 1em">Skills</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <h4>Languages</h4>
           <p>Java , Python, Javascript, TypeScript, HTML, CSS</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <h4>FrameWorks/Libraries</h4>
           <p>Spring, Angular, ReactJs, Bootsrap</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <h4>Tools</h4>
           <p>GitHub, Jenkins, SonarQube</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <h4>Cloud</h4>
           <p>AWS, Azure, GCP</p>
         </div>
       </div>
     </div>
     <div class="footer"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 300, // values from 0 to 3000, with step 50ms
+        duration: 300, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
