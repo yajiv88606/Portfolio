@@ -91,13 +91,13 @@ body {
       justify-content: space-evenly;
       margin: 0.5em;
       font-weight: lighter;
-      .logo{
-          height: 1.5em;
-          width: 1.5em;
-          background-color: none;
-          box-shadow: none;
-          color: white;
-          cursor: pointer;
+      .logo {
+        height: 1.5em;
+        width: 1.5em;
+        background-color: none;
+        box-shadow: none;
+        color: white;
+        cursor: pointer;
       }
     }
   }
@@ -113,6 +113,11 @@ body {
     box-shadow: 2px 2px 5px grey, -2px -2px 3px rgb(207, 207, 207);
     text-align: center;
     padding: 1em;
+    i{
+      color: #753ea1;
+      font-size: 1.75em;
+      margin: 0.5em;
+    }
     h4 {
       font-weight: 800;
     }

@@ -157,6 +157,12 @@ body {
   padding: 1em;
 }
 
+.education .item i {
+  color: #753ea1;
+  font-size: 1.75em;
+  margin: 0.5em;
+}
+
 .education .item h4 {
   font-weight: 800;
 }
