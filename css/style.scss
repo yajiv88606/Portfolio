@@ -8,10 +8,11 @@
 body {
   scroll-behavior: smooth !important;
   overflow-x: hidden!important;
+  font-size: 1em!important;
 }
 :root {
-  --primary-background: #530e8b;
-  --secondary-background: #4c1a75;
+  --primary-background: #0a0a0a;
+  --secondary-background: #222222;
   --primary-header-color: #e7562e;
   --secondary-header-color: #21e9db;
   --about-details-color: #4acac2;
@@ -68,7 +69,6 @@ button{
     }
     a:hover {
       color: var(--nav-on-hover);
-      font-weight: bold;
     }
   }
 }
@@ -113,7 +113,7 @@ button{
         width: 1.5em;
         background-color: none;
         box-shadow: none;
-        color: white;
+        color: var(--secondary-header-color);
         cursor: pointer;
       }
     }
@@ -196,16 +196,8 @@ button{
   }
 }
 
-//circle css
-// .circle{
-//     position: absolute;
-//     top: 0px;
-//     left:0px;
-//     border-radius: 50%;
-//     height: 30vh;
-//     width: 30vh;
-//     border: 1px soid grey;
-//     background-color: #ec907a;
-//     opacity: 0.6;
-//     z-index: -1;
-// }
+@media all and(max-width:700px){
+  *{
+    font-size: small;
+  }
+}

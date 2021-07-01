@@ -8,11 +8,12 @@
 body {
   scroll-behavior: smooth !important;
   overflow-x: hidden !important;
+  font-size: 1em !important;
 }
 
 :root {
-  --primary-background: #530e8b;
-  --secondary-background: #4c1a75;
+  --primary-background: #0a0a0a;
+  --secondary-background: #222222;
   --primary-header-color: #e7562e;
   --secondary-header-color: #21e9db;
   --about-details-color: #4acac2;
@@ -94,7 +95,6 @@ button {
 .navbar ul a:hover,
 .footer ul a:hover {
   color: var(--nav-on-hover);
-  font-weight: bold;
 }
 
 .about {
@@ -157,7 +157,7 @@ button {
   background-color: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: white;
+  color: var(--secondary-header-color);
   cursor: pointer;
 }
 
@@ -253,6 +253,12 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media all and (max-width: 700px) {
+  * {
+    font-size: small;
   }
 }
 /*# sourceMappingURL=style.css.map */
