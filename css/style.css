@@ -7,16 +7,24 @@
 
 body {
   scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
 }
 
 :root {
-  --primary-background: #421d61;
-  --secondar-background: #462066;
+  --primary-background: #530e8b;
+  --secondary-background: #4c1a75;
+  --primary-header-color: #e7562e;
+  --secondary-header-color: #21e9db;
+  --about-details-color: #4acac2;
+  --nav-color: rgb(216, 216, 216);
+  --nav-on-hover: white;
+  --empty-background-color:#ffffff;
+  --text-header-color:var(--primary-background);
 }
 
 ::-webkit-scrollbar {
-  background-color: #421d61;
-  width: 10px;
+  background-color: var(--primary-background);
+  width: 7.5px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -24,10 +32,17 @@ body {
   border-radius: 10px;
 }
 
+button {
+  outline: none !important;
+  background: none !important;
+  cursor: pointer;
+  border: none !important;
+}
+
 .navbar,
 .footer {
   cursor: pointer;
-  background-color: #462066;
+  background-color: var(--secondary-background);
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +54,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  color: #ff7a5a;
+  color: var(--primary-header-color);
 }
 
 .navbar header,
@@ -57,7 +72,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: #d8d8d8;
+  color: var(--nav-color);
 }
 
 .navbar ul li,
@@ -68,20 +83,26 @@ body {
 .navbar ul li a,
 .footer ul li a {
   text-decoration: none;
-  color: #d8d8d8;
+  color: var(--nav-color);
+}
+
+.navbar ul li button,
+.footer ul li button {
+  color: var(--nav-color);
 }
 
 .navbar ul a:hover,
 .footer ul a:hover {
-  color: white;
+  color: var(--nav-on-hover);
+  font-weight: bold;
 }
 
 .about {
-  color: #05ebdb;
+  color: var(--secondary-header-color);
   min-height: 50vh;
   padding: 1em 1em;
   margin: auto;
-  background-color: #421d61;
+  background-color: var(--primary-background);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -114,7 +135,7 @@ body {
 }
 
 .about .profile p {
-  color: #03c2b5;
+  color: var(--about-details-color);
   line-height: 1.3em;
 }
 
@@ -147,9 +168,12 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
+  background-color: var(--empty-background-color);
 }
 
 .education .item {
+  background-color: #f1f1f1;
+  color: black;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px grey, -2px -2px 3px #cfcfcf;
           box-shadow: 2px 2px 5px grey, -2px -2px 3px #cfcfcf;
@@ -158,7 +182,7 @@ body {
 }
 
 .education .item i {
-  color: #753ea1;
+  color: var(--text-header-color);
   font-size: 1.75em;
   margin: 0.5em;
 }
@@ -173,13 +197,13 @@ body {
 
 .education .item p .imp {
   font-weight: bold;
-  color: #462066;
+  color: var(--text-header-color);
 }
 
 .skills {
-  background-color: #421d61;
-  color: white;
+  background-color: var(--secondary-background);
   padding: 1em 1em;
+  color: var(--primary-header-color);
 }
 
 .skills .cards {
@@ -203,7 +227,7 @@ body {
 
 .skills .cards .card h4 {
   font-weight: 800;
-  color: #462066;
+  color: var(--text-header-color);
 }
 
 .skills .cards .card p {
@@ -212,7 +236,7 @@ body {
 
 .skills .cards .card p .imp {
   font-weight: bold;
-  color: #462066;
+  color: var(--secondary-background);
 }
 
 @media all and (min-width: 700px) {
