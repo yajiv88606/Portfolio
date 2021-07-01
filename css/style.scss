@@ -11,7 +11,7 @@ body {
   font-size: 1em!important;
 }
 :root {
-  --primary-background: #080808;
+  --primary-background: #1b1b1b;
   --secondary-background: #222222;
   --primary-header-color: #e7562e;
   --secondary-header-color: #21e9db;
@@ -97,6 +97,7 @@ button{
       font-size: larger;
       margin: 0.5em 0em;
       letter-spacing: 0.23em;
+      color: var(--primary-header-color);
     }
     p {
       color: var(--about-details-color);
@@ -125,7 +126,6 @@ button{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
-  background-color: var(--empty-background-color);
   .item {
     background-color: #f1f1f1;
     color: black;
@@ -181,6 +181,10 @@ button{
       }
     }
   }
+}
+
+.footer{
+  font-size: smaller;
 }
 
 @media all and (min-width: 700px) {

@@ -14,19 +14,19 @@ var themeSelector = document.getElementById('theme')
 
 
 // // default light theme
-// --primary-background: #ffffff;
-// --secondary-background: #f1f1f1;
-// --primary-header-color: #202020;
-// --secondary-header-color: #2c2a2a;
-// --about-details-color:#181818;
-// --nav-color:rgb(97, 97, 97);
-// --nav-on-hover:rgb(97, 97, 97);
-// --empty-background-color:#rgb(97, 97, 97);
+// --primary-background: #bbbbbb;
+// --secondary-background: #e1e1e1;
+// --primary-header-color: #000000;
+// --about-details-color: #1b1b1b;
+// --nav-color: rgb(47 47 47);
+// --nav-on-hover: black;
+// --empty-background-color: #rgb(29 29 29);
+// --text-header-color: black;
 
 
 document.getElementById("theme").addEventListener('click',(event)=>{
     if(dark){
-        variables.style.setProperty('--primary-background','#080808')
+        variables.style.setProperty('--primary-background','#1b1b1b')
         variables.style.setProperty('--secondary-background','#222222')
         variables.style.setProperty('--primary-header-color','#e7562e')
         variables.style.setProperty('-secondary-header-color','#21e9db')
@@ -36,14 +36,14 @@ document.getElementById("theme").addEventListener('click',(event)=>{
         variables.style.setProperty('--nav-on-hover','white')
         themeSelector.style.setProperty('color','white')   
     }else{      
-        variables.style.setProperty('--primary-background','#ffffff')
-        variables.style.setProperty('--secondary-background','#f1f1f1')
-        variables.style.setProperty('--primary-header-color','#202020')
+        variables.style.setProperty('--primary-background','#bbbbbb')
+        variables.style.setProperty('--secondary-background','#e1e1e1')
+        variables.style.setProperty('--primary-header-color','#000000')
         variables.style.setProperty('-secondary-header-color','#2c2a2a')
-        variables.style.setProperty('--about-details-color','#181818')
-        variables.style.setProperty('--nav-color','rgb(97, 97, 97)')
+        variables.style.setProperty('--about-details-color','#1b1b1b')
+        variables.style.setProperty('--nav-color','rgb(47 47 47)')
         variables.style.setProperty('--nav-on-hover','black')
-        variables.style.setProperty('--empty-background-color','#rgb(97, 97, 97)')
+        variables.style.setProperty('--empty-background-color','rgb(29 29 29)')
         variables.style.setProperty('--text-header-color','black')
         themeSelector.style.setProperty('color','black')
     }

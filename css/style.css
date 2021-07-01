@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --primary-background: #080808;
+  --primary-background: #1b1b1b;
   --secondary-background: #222222;
   --primary-header-color: #e7562e;
   --secondary-header-color: #21e9db;
@@ -132,6 +132,7 @@ button {
   font-size: larger;
   margin: 0.5em 0em;
   letter-spacing: 0.23em;
+  color: var(--primary-header-color);
 }
 
 .about .profile p {
@@ -168,7 +169,6 @@ button {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
-  background-color: var(--empty-background-color);
 }
 
 .education .item {
@@ -237,6 +237,10 @@ button {
 .skills .cards .card p .imp {
   font-weight: bold;
   color: var(--secondary-background);
+}
+
+.footer {
+  font-size: smaller;
 }
 
 @media all and (min-width: 700px) {
