@@ -26,8 +26,8 @@ var themeSelector = document.getElementById('theme')
 
 document.getElementById("theme").addEventListener('click',(event)=>{
     if(dark){
-        variables.style.setProperty('--primary-background','#530e8b')
-        variables.style.setProperty('--secondary-background','#4c1a75')
+        variables.style.setProperty('--primary-background','#080808')
+        variables.style.setProperty('--secondary-background','#222222')
         variables.style.setProperty('--primary-header-color','#e7562e')
         variables.style.setProperty('-secondary-header-color','#21e9db')
         variables.style.setProperty('--about-details-color','#4acac2')

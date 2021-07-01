@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --primary-background: #0a0a0a;
+  --primary-background: #080808;
   --secondary-background: #222222;
   --primary-header-color: #e7562e;
   --secondary-header-color: #21e9db;
@@ -122,8 +122,8 @@ button {
   margin: auto;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-box-shadow: 4px 2px 8px 2px #1f0038;
-          box-shadow: 4px 2px 8px 2px #1f0038;
+  -webkit-box-shadow: 4px 2px 5px 1px #a5a5a5;
+          box-shadow: 4px 2px 5px 1px #a5a5a5;
 }
 
 .about .profile h3 {
