@@ -29,7 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1f0038;
+  background-color: var(--secondary-background);
   border-radius: 10px;
 }
 
@@ -38,6 +38,12 @@ button {
   background: none !important;
   cursor: pointer;
   border: none !important;
+}
+
+.logos {
+  margin: 10px;
+  height: 60px;
+  width: auto;
 }
 
 .navbar,
