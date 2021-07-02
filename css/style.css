@@ -42,7 +42,7 @@ button {
 
 .logos {
   margin: 10px;
-  height: 60px;
+  height: 60px !important;
   width: auto;
   text-align: center;
   vertical-align: middle;
